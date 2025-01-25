@@ -1,0 +1,12 @@
+#!/bin/bash
+# -------------------------------------------------------------------------------------------
+# @author: Araf Karsh Hamid
+# -------------------------------------------------------------------------------------------
+# Build Container
+# -------------------------------------------------------------------------------------------
+# Get the Org Name and Container Name from Properties file
+ORG=`../../getServiceName 1`
+SERVICE=`../../getServiceName 4`
+# Build Container
+echo "docker buildx build --platform linux/arm64,linux/amd64 --rm=true -t $ORG/$SERVICE --push ."
+docker buildx build --platform linux/arm64,linux/amd64 --rm=true -t $ORG/$SERVICE --push .
