@@ -22,7 +22,7 @@ Microservice Template gives you a
 7. Update the SRC_BASE (Your Service Repository Base Directory) in getServiceName shell script
 
 Sample Property File Template
-![Property File](https://raw.githubusercontent.com/arafkarsh/mock-cart/main/diagrams/MS-Property-File.jpg)
+![Property File](https://raw.githubusercontent.com/arafkarsh/mock-order/main/diagrams/MS-Property-File.jpg)
 
 When you change the version in POM.xml, update that info in src/main/resources/app.props.tmpl - service.version property also.
 
